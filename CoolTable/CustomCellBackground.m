@@ -9,6 +9,13 @@
 #import "CustomCellBackground.h"
 #import "Common.h"
 
+@interface CustomCellBackground ()
+
+@property (nonatomic, assign) BOOL lastCell;
+@property (nonatomic, assign) BOOL selected;
+
+@end
+
 @implementation CustomCellBackground
 
 
@@ -46,7 +53,21 @@
     
     CGPoint startPoint = CGPointMake(paperRect.origin.x, paperRect.origin.y + paperRect.size.height - 1);
     CGPoint endPoint = CGPointMake(paperRect.origin.x + paperRect.size.width - 1, paperRect.origin.y + paperRect.size.height - 1);
-    draw1PxStroke(context, startPoint, endPoint, separatorColor.CGColor);
+    if (!self.lastCell) {
+        draw1PxStroke(context, startPoint, endPoint, separatorColor.CGColor);
+    } else {
+        CGContextSetStrokeColorWithColor(context, whiteColor.CGColor);
+        CGContextSetLineWidth(context, 1.0);
+        
+        CGPoint pointA = CGPointMake(paperRect.origin.x, paperRect.origin.y + paperRect.size.height - 1);
+        CGPoint pointB = CGPointMake(paperRect.origin.x, paperRect.origin.y);
+        CGPoint pointC = CGPointMake(paperRect.origin.x + paperRect.size.width - 1, paperRect.origin.y);
+        CGPoint pointD = CGPointMake(paperRect.origin.x + paperRect.size.width - 1, paperRect.origin.y + paperRect.size.height - 1);
+        
+        draw1PxStroke(context, pointA, pointB, whiteColor.CGColor);
+        draw1PxStroke(context, pointB, pointC, whiteColor.CGColor);
+        draw1PxStroke(context, pointC, pointD, whiteColor.CGColor);
+    }
 }
 
 

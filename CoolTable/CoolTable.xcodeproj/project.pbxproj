@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A058C7B1CE1DD4D00AB5096 /* CustomHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A058C7A1CE1DD4D00AB5096 /* CustomHeader.m */; };
+		8A62D2141CE1FDED001C30E4 /* CustomFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A62D2131CE1FDED001C30E4 /* CustomFooter.m */; };
 		8A8FD90B1CD89105001637D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8FD90A1CD89105001637D5 /* main.m */; };
 		8A8FD90E1CD89105001637D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8FD90D1CD89105001637D5 /* AppDelegate.m */; };
 		8A8FD9141CD89105001637D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A8FD9121CD89105001637D5 /* Main.storyboard */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		8A058C791CE1DD4D00AB5096 /* CustomHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeader.h; sourceTree = "<group>"; };
 		8A058C7A1CE1DD4D00AB5096 /* CustomHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeader.m; sourceTree = "<group>"; };
+		8A62D2121CE1FDED001C30E4 /* CustomFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFooter.h; sourceTree = "<group>"; };
+		8A62D2131CE1FDED001C30E4 /* CustomFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFooter.m; sourceTree = "<group>"; };
 		8A8FD9061CD89105001637D5 /* CoolTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8FD90A1CD89105001637D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8A8FD90C1CD89105001637D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +56,8 @@
 		8A8FD8FD1CD89105001637D5 = {
 			isa = PBXGroup;
 			children = (
+				8A62D2121CE1FDED001C30E4 /* CustomFooter.h */,
+				8A62D2131CE1FDED001C30E4 /* CustomFooter.m */,
 				8A058C791CE1DD4D00AB5096 /* CustomHeader.h */,
 				8A058C7A1CE1DD4D00AB5096 /* CustomHeader.m */,
 				8A8FD9291CD8A93D001637D5 /* Common.h */,
@@ -171,6 +176,7 @@
 				8A8FD92B1CD8A93D001637D5 /* Common.m in Sources */,
 				8A8FD9251CD891E5001637D5 /* CoolTableViewController.m in Sources */,
 				8A8FD90E1CD89105001637D5 /* AppDelegate.m in Sources */,
+				8A62D2141CE1FDED001C30E4 /* CustomFooter.m in Sources */,
 				8A8FD90B1CD89105001637D5 /* main.m in Sources */,
 				8A8FD9281CD8A043001637D5 /* CustomCellBackground.m in Sources */,
 				8A058C7B1CE1DD4D00AB5096 /* CustomHeader.m in Sources */,
