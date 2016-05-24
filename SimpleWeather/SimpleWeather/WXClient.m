@@ -25,6 +25,8 @@
         _session = [NSURLSession sessionWithConfiguration:config];
     }
     return self;
+    
+    weakify(<#...#>)
 }
 
 
